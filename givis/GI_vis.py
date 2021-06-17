@@ -365,16 +365,6 @@ def set_output(path):
     return output
 
 
-"""
-
-
-
-
-
-
-"""
-
-
 prog_name = "Giant Impact Visualization Tool"
 
 if "--" not in sys.argv:
