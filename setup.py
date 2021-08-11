@@ -27,7 +27,7 @@ subprocess.call([str(py_exec), "-m", "pip", "install", "--upgrade", "pip"])
 # install dependencies using pip
 # dependencies such as 'numpy' could be added to the end of this command's list
 
-packages = ["matplotlib", "scipy"]
+packages = ["matplotlib", "scipy", "tqdm"]
 
 for p in packages:
     subprocess.call(

@@ -1,13 +1,11 @@
 import bpy
 import numpy as np
 import matplotlib.pyplot as plt
-from space_view3d_point_cloud_visualizer import PCVControl, PCV_OT_render
+from .space_view3d_point_cloud_visualizer import PCVControl, PCV_OT_render
 import os
 
-positions = np.load(
-    "../GI_vis_assets/new_data/positions_x1Downsample_pos.npy", mmap_mode="r"
-)
-temp = np.load("../GI_vis_assets/new_data/positions_x1Downsample_T.npy", mmap_mode="r")
+positions = np.load("../assets/positions_x1Downsample_pos.npy", mmap_mode="r")
+temp = np.load("../assets/positions_x1Downsample_Temp.npy", mmap_mode="r")
 
 
 def log_normalize(temp, T_min=1300, T_max=1e4):
