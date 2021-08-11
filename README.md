@@ -5,9 +5,21 @@ that's exposed to the user. Install the command line tool in base python, find t
 blender installation and install those dependencies, then call blender in a subprocess
 
 ## Assets
-![Example Simulation](assets/full_pressure.gif)
-![Example Simulation](assets/full_pressure_3D.gif)
-![Example Simulation](assets/pressure_sliced.gif)
+
+### Full Simulation
+<p align="center">
+  <img src="assets/full_pressure.gif" alt="animated" />
+</p>
+
+### 3D Option
+<p align="center">
+  <img src="assets/full_pressure_3D.gif" alt="animated" />
+</p>
+
+### Slice Along Axis
+<p align="center">
+  <img src="assets/pressure_sliced.gif" alt="animated" />
+</p>
 
 ## Setup
 Install [Blender 2.79](https://download.blender.org/release/Blender2.79/)
