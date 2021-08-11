@@ -22,7 +22,9 @@ blender installation and install those dependencies, then call blender in a subp
 </p>
 
 ## Setup
-Install [Blender 2.79](https://download.blender.org/release/Blender2.79/)
+This package requires [Blender](https://download.blender.org/release/Blender2.79/) to be installed.
+Blender handles the majority of the raytracing while this packages handles camera movement,
+particle position, data manipulation, and 
 
 ### MacOS
 `export PATH=$PATH:/Applications/Blender/blender.app/Contents/MacOS`
