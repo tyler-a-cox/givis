@@ -27,16 +27,16 @@ class Visualization:
 
     def __init__(
         self,
-        pos_file,
-        var_file,
-        output,
-        mp=False,
-        cores=4,
-        color_bins=100,
+        positions: str,
+        variable: str,
+        output: str,
+        mp: bool = False,
+        cores: int = 4,
+        color_bins: int = 100,
         color_map=plt.cm.inferno,
-        x_res=1920,
-        y_res=1080,
-        cut=False,
+        x_res: int = 1920,
+        y_res: int = 1080,
+        cut: bool = False,
     ):
         """ """
         self.color_bins = color_bins
@@ -45,8 +45,8 @@ class Visualization:
         self.cores = cores
         self.x_res = x_res
         self.y_res = y_res
-        self.positions = np.load(pos_file, mmap_mode="r")
-        self.variable = np.load(var_file, mmap_mode="r")
+        self.positions = np.load(positions, mmap_mode="r")
+        self.variable = np.load(variable, mmap_mode="r")
         self.cmap = self.color_map(np.linspace(0, 1, self.color_bins))
         self.output = output
         self.cut = cut
